@@ -9,17 +9,8 @@
       "packages": "cli,rlang",
       "installSystemRequirements": true
     },
-    // Quarto configuration : https://github.com/rocker-org/devcontainer-features/blob/main/src/quarto-cli/README.md
-    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
-      "installTinyTex": true,
-      "version": "prerelease"
-    },
     // RStudio Server configuration: https://github.com/rocker-org/devcontainer-features/blob/main/src/rstudio-server/README.md
     "ghcr.io/rocker-org/devcontainer-features/rstudio-server": {}
-  },
-  // Automatically start RStudio Server
-  "postCreateCommand": {
-    "rstudio-start": "rserver"
   },
   // Ensure the default RStudio Server port is automatically forwarded
   "forwardPorts": [
@@ -33,7 +24,11 @@
   	}
   },
   // Attempt to force RStudio Server to start.
-  "postCreateCommand": "sudo rserver",
-  "postAttachCommand": "sudo rserver",
+  "postCreateCommand": {
+    "rstudio-start": "rserver"
+  },
+  "postAttachCommand": {
+    "rstudio-start": "rserver"
+  },
   "remoteUser": "rstudio"
 }
