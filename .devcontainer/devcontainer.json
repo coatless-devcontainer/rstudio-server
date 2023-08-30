@@ -4,11 +4,6 @@
   "image": "ghcr.io/rocker-org/devcontainer/r-ver:4.3",
   // Add software
   "features": {
-    // R package config: https://github.com/rocker-org/devcontainer-features/blob/main/src/r-packages/README.md
-    "ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
-      "packages": "cli,rlang",
-      "installSystemRequirements": true
-    },
     // RStudio Server configuration: https://github.com/rocker-org/devcontainer-features/blob/main/src/rstudio-server/README.md
     "ghcr.io/rocker-org/devcontainer-features/rstudio-server": {}
   },
@@ -16,19 +11,10 @@
   "forwardPorts": [
     8787
   ],
-  "portsAttributes": {
-  	"8787": {
-  		"label": "Rstudio",
-  		"requireLocalPort": true,
-  		"onAutoForward": "ignore"
-  	}
-  },
-  // Attempt to force RStudio Server to start.
-  "postCreateCommand": {
-    "rstudio-start": "rserver"
-  },
-  "postAttachCommand": {
-    "rstudio-start": "rserver"
-  },
-  "remoteUser": "rstudio"
+    "postAttachCommand": {
+        "rstudio-start": "rserver"
+    },
+    "forwardPorts": [
+        8787
+    ]
 }
