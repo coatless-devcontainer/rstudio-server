@@ -25,10 +25,10 @@
   },
   // Attempt to force RStudio Server to start.
   "postCreateCommand": {
-    "rstudio-start": "sudo rserver"
+    "rstudio-start": "rserver"
   },
   "postAttachCommand": {
-    "rstudio-start": "sudo rserver"
+    "rstudio-start": "rserver"
   },
   "remoteUser": "rstudio"
 }
