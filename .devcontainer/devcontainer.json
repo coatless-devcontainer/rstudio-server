@@ -24,5 +24,16 @@
   // Ensure the default RStudio Server port is automatically forwarded
   "forwardPorts": [
     8787
-  ]
+  ],
+  "portsAttributes": {
+  	"8787": {
+  		"label": "Rstudio",
+  		"requireLocalPort": true,
+  		"onAutoForward": "ignore"
+  	}
+  },
+  // Attempt to force RStudio Server to start.
+  "postCreateCommand": "sudo rserver",
+  "postAttachCommand": "sudo rserver",
+  "remoteUser": "rstudio"
 }
