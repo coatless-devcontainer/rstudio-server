@@ -8,7 +8,7 @@ You can try out the Codespace by clicking on the following button:
 
 **Note:** Codespaces are available to Students and Teachers for free [up to 180 core hours per month](https://docs.github.com/en/education/manage-coursework-with-github-classroom/integrate-github-classroom-with-an-ide/using-github-codespaces-with-github-classroom#about-github-codespaces) through [GitHub Education](https://education.github.com/). Otherwise, you will have [up to 60 core hours and 15 GB free per month](https://github.com/features/codespaces#pricing).
 
-After clicking the [above button (or this link)](https://codespaces.new/coatless-devcontainer/rstudio-server?quickstart=1), the codespace start to set itself up. This process does take a bit of time. You can either hang tight or grab a coffee. 
+After clicking the [above button (or this link)](https://codespaces.new/coatless-devcontainer/rstudio-server?quickstart=1), the codespace will start to set itself up. This process does take a bit of time. You can either wait or grab a coffee. 
 
 <img width="675" alt="github-codespace-building-rstudio-server-truncated" src="https://github.com/coatless-devcontainer/rstudio-server/assets/833642/d3fd13c2-86fa-45b2-8913-add22ffe2575">
 
