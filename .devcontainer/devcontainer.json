@@ -19,8 +19,9 @@
   "portsAttributes": {
   	"8787": {
   		"label": "RStudio",
-  		"requireLocalPort": true,
-  		"onAutoForward": "ignore"
+  		"requireLocalPort": true 
+      //,
+  		// "onAutoForward": "ignore"
   	}
   },
   "postAttachCommand": {
