@@ -1,7 +1,7 @@
 // Config options: https://github.com/rocker-org/devcontainer-templates/tree/main/src/r-ver
 {
   "name": "R (rocker/r-ver base)",
-  "image": "ghcr.io/rocker-org/devcontainer/r-ver:4.4",
+  "image": "ghcr.io/rocker-org/devcontainer/r-ver:4.5",
   // Add software
   "features": {
     // Quarto configuration: https://github.com/rocker-org/devcontainer-features/blob/main/src/quarto-cli/README.md
